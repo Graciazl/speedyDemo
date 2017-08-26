@@ -15,6 +15,7 @@ body, html {
     line-height: 24px;
     font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 
 :link, :visited {
@@ -28,7 +29,16 @@ img, video {
     max-width: 100%;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 /* Header */
+
+.devsite-top-section-wrapper {
+    position: relative;
+    z-index: 10007;
+}
 
 .devsite-top-section {
     position: fixed;
@@ -175,7 +185,6 @@ img, video {
 }
 
 .l-max-width-standard {
-    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px !important;
@@ -235,7 +244,6 @@ img, video {
     margin: 8px;
     padding: 0;
     width: 284px;
-    box-sizing: border-box;
     margin-right: 20px;
     background: #fff;
     border-radius: 2px;
@@ -272,8 +280,10 @@ img, video {
     text-transform: uppercase;
 }
 
+/* Footer */
+
 .devsite-footer-linkboxes {
-    background: linear-gradient(90deg,#303c42 50%,#37424b 50%);
+/*    background: linear-gradient(90deg,#303c42 50%,#37424b 50%);*/
     font: 14px/16px Roboto,sans-serif;
 }
 
