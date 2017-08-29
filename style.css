@@ -29,6 +29,28 @@ img, video {
     max-width: 100%;
 }
 
+.button {
+    padding: 8px 16px;
+    height: 36px;
+    min-width: 36px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.button + .button {
+    margin-left: 16px;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -45,7 +67,7 @@ img, video {
     top: 0;
     width: 100%;
     height: 96px;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
 
 .devsite-top-logo-row-wrapper-wrapper {
@@ -97,7 +119,7 @@ img, video {
 }
 
 .devsite-site-name {
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, .54);
     display: inline-block;
     letter-spacing: 0;
     margin: 0;
@@ -148,11 +170,11 @@ img, video {
 }
 
 .devsite-doc-set-nav-tab {
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, .54);
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
     display: inline-block;
-    font: 500 14px/44px Roboto,sans-serif;
+    font: 500 14px/44px Roboto, sans-serif;
     margin: 0;
     padding: 0 24px;
     text-transform: capitalize;
@@ -162,6 +184,35 @@ img, video {
     transition-delay: initial;
 }
 
+.devsite-product-button-row {
+    margin: 0 12px 0 0;
+    padding: 6px 0;
+    position: fixed;
+    right: 0;
+    top: 48px;
+    visibility: visible;
+    flex: 1 0 auto;
+    text-align: right;
+    z-index: 1;
+}
+
+.cloud-free-trial-button {
+    background: #2196F3;
+    color: #fff;
+    font-size: 13px;
+    transition: all .3s;
+
+}
+
+.cloud-contact-sales-button {
+    background: #fcfcfc;
+    color: #424242;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+
+
 /* Main content */
 
 .devsite-main-content {
@@ -169,7 +220,7 @@ img, video {
     margin-bottom: 0;
     padding: 0 10px;
     min-height: calc(100vh - 484px);
-    color:  #4A5960;
+    color: #4A5960;
     font-size: 14px;
 }
 
@@ -192,12 +243,12 @@ img, video {
 
 .hero h1 {
     margin: 0;
-    color:  #4A5960;
+    color: #4A5960;
     font-size: 46px;
     font-weight: 200;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     letter-spacing: -.01em;
-/*    font: 300 34px/40px Roboto,sans-serif;*/
+    /*    font: 300 34px/40px Roboto,sans-serif;*/
     text-overflow: ellipsis;
 }
 
@@ -205,6 +256,31 @@ img, video {
     font-size: 16px;
     color: #4a5960;
     margin: 20px 0 28px;
+}
+
+.hero .button-cloud {
+    background: #2B85E7;
+    color: rgba(255, 255, 255, .87);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 0 48px;
+    margin: 0 16px 0 0;
+    height: auto;
+    letter-spacing: .01em;
+    display: inline-block;
+    transition: box-shadow .3s, background-color .3s, color .3s, transform .3s;
+}
+
+.hero .button-cloud:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+    transform: translate3d(0, -1px, 0);
+}
+
+.hero .button-cloud-contact {
+    background: #fff;
+    color: #2b85e7;
+    padding: 0 48px;
 }
 
 .hero-gear {
@@ -256,8 +332,8 @@ img, video {
 }
 
 .flex-hover-card:hover {
-    box-shadow: -1px 5px 25px -5px rgba(0,0,0,0.8);
-    transform: translate3d(0,-2px,0);
+    box-shadow: -1px 5px 25px -5px rgba(0, 0, 0, 0.8);
+    transform: translate3d(0, -2px, 0);
 }
 
 .inner-card {
@@ -292,8 +368,8 @@ img, video {
 /* Footer */
 
 .devsite-footer-linkboxes {
-/*    background: linear-gradient(90deg,#303c42 50%,#37424b 50%);*/
-    font: 14px/16px Roboto,sans-serif;
+    /*    background: linear-gradient(90deg,#303c42 50%,#37424b 50%);*/
+    font: 14px/16px Roboto, sans-serif;
 }
 
 .devsite-footer-linkboxes > .devsite-full-site-with {
@@ -323,7 +399,7 @@ img, video {
 
 .devsite-footer-linkbox-heading {
     color: #fff;
-    font: 500 14px/16px Roboto,sans-serif;
+    font: 500 14px/16px Roboto, sans-serif;
     margin: 0 0 8px;
     overflow: hidden;
     text-overflow: ellipsis;
